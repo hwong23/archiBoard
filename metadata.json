@@ -1,0 +1,6 @@
+{
+  "name": "Tablero de Arquitectura Empresarial ArchiMate",
+  "description": "Plataforma de tableros interactivos para visualización de estadísticas, análisis de impacto, dependencias y riesgos de gobierno en modelos ArchiMate.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

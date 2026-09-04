@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd" identifier="id-e61caa0dc3cc436aa918b17e0f565135">
+  <name xml:lang="en">PERSN</name>
+  <documentation xml:lang="en">Version 0.61
+
+# Proyecto instauración ERP Personería. Documentación de Arquitectura, estrategias, acciones, tecnologías. 
+Agencia Nacional Digital.</documentation>
+  <properties>
+    <property propertyDefinitionRef="propid-20">
+      <value xml:lang="en">IntegracionJEP.html</value>
+    </property>
+  </properties>
+  <elements>
+    <element identifier="id-c47eabe09b074d3f8f7294d393e22f27" xsi:type="Capability">
+      <name xml:lang="en">Línea ERP Financiero &lt;&lt;cap&gt;&gt;</name>
+    </element>
+    <element identifier="id-7bba42429a2e407ab4148efc58d95145" xsi:type="Capability">
+      <name xml:lang="en">Línea ERP Nómina &lt;&lt;cap&gt;&gt;</name>
+    </element>
+    <element identifier="id-e7ec7335a26340559f0b9591a0139211" xsi:type="Capability">
+      <name xml:lang="en">Línea ERP Recursos Físicos &lt;&lt;cap&gt;&gt;</name>
+    </element>
+    <element identifier="id-8420d7804c5444108aa212d67654a3e0" xsi:type="BusinessObject">
+      <name xml:lang="en">Elementos</name>
+    </element>
+    <element identifier="id-2ed19fb8b72f47e28b0904a1a9992f36" xsi:type="BusinessObject">
+      <name xml:lang="en">Tipos de Comprobantes</name>
+    </element>
+    <element identifier="id-a04d8d8f7ed544638df36ab660988ec5" xsi:type="BusinessObject">
+      <name xml:lang="en">Causa de Retiro</name>
+    </element>
+    <element identifier="id-108acf53095247af920d0f4a580fb8cb" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Intercambio Información RR. Físicos</name>
+    </element>
+    <element identifier="id-1e401aef291848d4917b6bcd9eba7f1c" xsi:type="BusinessObject">
+      <name xml:lang="en">Sueldo Básico</name>
+    </element>
+    <element identifier="id-4d040232fbad4fe6b3176558739ab4e5" xsi:type="BusinessObject">
+      <name xml:lang="en">Formación Académica</name>
+    </element>
+    <element identifier="id-7670c2e52fb84383b17761e555f00d57" xsi:type="BusinessObject">
+      <name xml:lang="en">Novedades</name>
+    </element>
+    <element identifier="id-af3b0ff4bb884de588f42c2b11b05cf5" xsi:type="BusinessObject">
+      <name xml:lang="en">Fecha Retiro</name>
+    </element>
+    <element identifier="id-05422a64298f4c719436bdcef5f12741" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Planeación</name>
+    </element>
+    <element identifier="id-4bb10bf604ad4845a0e5879324ff408a" xsi:type="BusinessObject">
+      <name xml:lang="en">Tipo de Contratación</name>
+    </element>
+    <element identifier="id-d90a0574c1df4c55b08b05a11728376f" xsi:type="BusinessObject">
+      <name xml:lang="en">Saldos Iniciales</name>
+    </element>
+    <element identifier="id-cb96eba599f148bc8efaaf098892e1d1" xsi:type="BusinessObject">
+      <name xml:lang="en">Matriz de Sistemas de Información vs Procesos de Negocio</name>
+    </element>
+    <element identifier="id-55cbf6638b4347768be7c64b1046c49f" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Análisis ERP</name>
+    </element>
+    <element identifier="id-a668a77987404f17a9db3900e52d6f3f" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Especificaciones Financiero</name>
+    </element>
+    <element identifier="id-8f7bb30a4c1e42fbb17393e7b0105595" xsi:type="BusinessObject">
+      <name xml:lang="en">CDP suministrados por BOGDATA</name>
+    </element>
+    <element identifier="id-df97f70bf57a49a9b6417335e41494d6" xsi:type="BusinessObject">
+      <name xml:lang="en">Embargos</name>
+    </element>
+    <element identifier="id-a3564b5ee07f44eaba8ec4ac24ad88e0" xsi:type="BusinessObject">
+      <name xml:lang="en">Fórmula</name>
+    </element>
+    <element identifier="id-879c7713b84a4ff6aabd9d7fc9bc474c" xsi:type="BusinessObject">
+      <name xml:lang="en">ARL</name>
+    </element>
+    <element identifier="id-851e1985a58b4883bbf4ab5c7f085ba3" xsi:type="BusinessObject">
+      <name xml:lang="en">Entradas</name>
+    </element>
+    <element identifier="id-e81dbdbf7f6d418bb140c51a91a51c79" xsi:type="BusinessObject">
+      <name xml:lang="en">Familiar</name>
+    </element>
+    <element identifier="id-9430e1260ff848d792e5d50574caa12a" xsi:type="BusinessObject">
+      <name xml:lang="en">Cargo</name>
+    </element>
+    <element identifier="id-075abda3d5a140f7a3e041c5be61ad5e" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Ensamble ERP</name>
+    </element>
+    <element identifier="id-18fcd04a9a5b42eeb0f10165298553bd" xsi:type="BusinessObject">
+      <name xml:lang="en">Estructura presupuestal definida en PCT</name>
+    </element>
+    <element identifier="id-e27d33117f5b4b599c06c8b57f225020" xsi:type="BusinessObject">
+      <name xml:lang="en">Conceptos</name>
+    </element>
+    <element identifier="id-dad7a2c0a70147a78337c4775383514d" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Verificación Financiero</name>
+    </element>
+    <element identifier="id-673f0f2a7f744d4b99be99ad3238d885" xsi:type="BusinessObject">
+      <name xml:lang="en">Preocupaciones del dominio SI</name>
+    </element>
+    <element identifier="id-cbca7fa9619541cab259d05bf7966252" xsi:type="BusinessObject">
+      <name xml:lang="en">RP suministrados por BOGDATA</name>
+    </element>
+    <element identifier="id-c50dbc2314f44e0aae332ac5bf34866a" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING. Sistema ERP</name>
+    </element>
+    <element identifier="id-223244a5a6384e09ac2c2374dc9c7316" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Verificación RR. Físicos</name>
+    </element>
+    <element identifier="id-b182a21d2d8947349e63252c9cebd4b8" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Sistema</name>
+    </element>
+    <element identifier="id-ea738087c8c34e56b69ed9ad9d4c4998" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Especificaciones Nómina</name>
+    </element>
+    <element identifier="id-f619626220b34ac187e17361ed5a4d89" xsi:type="BusinessObject">
+      <name xml:lang="en">Definición de Nómina</name>
+    </element>
+    <element identifier="id-81e4b341354541a3bb5497f4e32f36fd" xsi:type="BusinessObject">
+      <name xml:lang="en">Liquidación de Nómina</name>
+    </element>
+    <element identifier="id-0cb0f9cadd8b4c59a9155fec8e40cb73" xsi:type="BusinessObject">
+      <name xml:lang="en">Salidas</name>
+    </element>
+    <element identifier="id-6345447b4c1348418f8e5c620ff99176" xsi:type="BusinessObject">
+      <name xml:lang="en">Inventario de Elementos Devolutivos</name>
+    </element>
+    <element identifier="id-3bdb06b33cf249ec93967335e277bfa3" xsi:type="BusinessObject">
+      <name xml:lang="en">Datos Básicos</name>
+    </element>
+    <element identifier="id-d8b8b9d3e0b34dfd9502e5eb15c5e5ab" xsi:type="BusinessObject">
+      <name xml:lang="en">Categorías</name>
+    </element>
+    <element identifier="id-56e9ff4368bb425ba03de331bfd0ac94" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Migración Financiero</name>
+    </element>
+    <element identifier="id-d8fe0dd4c3074899bffcf122ee76883d" xsi:type="BusinessObject">
+      <name xml:lang="en">Catálogo jerárquico suministrado por BOGDATA</name>
+    </element>
+    <element identifier="id-192490aa787447358f00aa2f3ee151df" xsi:type="BusinessObject">
+      <name xml:lang="en">Vistas y Artefactos del Dominio</name>
+    </element>
+    <element identifier="id-c7e737db315e45329950f74f2071fede" xsi:type="BusinessObject">
+      <name xml:lang="en">Variables</name>
+    </element>
+    <element identifier="id-92047067ccf34188b81712e49eba2530" xsi:type="BusinessObject">
+      <name xml:lang="en">Información Bancaria</name>
+    </element>
+    <element identifier="id-d56451180c2c439993b24cd7b33af0b6" xsi:type="BusinessObject">
+      <name xml:lang="en">Catálogo de Sistemas de Información</name>
+    </element>
+    <element identifier="id-8cc7369a688f44698e3046f971e4e20e" xsi:type="BusinessObject">
+      <name xml:lang="en">Planteamiento de Arquitectura Empresarial</name>
+    </element>
+    <element identifier="id-772ea4bc19fb4ce1a628de459494bb4f" xsi:type="BusinessObject">
+      <name xml:lang="en">Centro de Costos</name>
+    </element>
+    <element identifier="id-aebd273f5fdd4c4fb852f899d5d7e9ac" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Emsable (iunión)</name>
+    </element>
+    <element identifier="id-7261846d78f9417d8aed89d56a11f485" xsi:type="BusinessObject">
+      <name xml:lang="en">Terceros</name>
+    </element>
+    <element identifier="id-512d3eb082b34bcca97e591978472b5b" xsi:type="BusinessObject">
+      <name xml:lang="en">Cargo Empresa Nivel</name>
+    </element>
+    <element identifier="id-45dea004ffe7429987d77a37ebf22b76" xsi:type="BusinessObject">
+      <name xml:lang="en">Dotación</name>
+    </element>
+    <element identifier="id-2ce7d397fb8447ba90a5b20baeb358f6" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Intercambio Información Financiero</name>
+    </element>
+    <element identifier="id-83b0a85cea2846cbba15642b9ea46cbb" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Especificaciones RR. Físicos</name>
+    </element>
+    <element identifier="id-31887c047292486e8923abaaaf7a53c5" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Intercambio Información Nómina</name>
+    </element>
+    <element identifier="id-34a05dc498a541ad855e2f95319f608d" xsi:type="BusinessObject">
+      <name xml:lang="en">Plan de Cuentas</name>
+    </element>
+    <element identifier="id-50b9fb16b9cf4753a75b803157e17fe8" xsi:type="BusinessObject">
+      <name xml:lang="en">Fecha de Ingreso</name>
+    </element>
+    <element identifier="id-e46160583cb54bb98f235b3658c069dc" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Configuración Financiero</name>
+    </element>
+    <element identifier="id-bcccc5288d0043cda63129c03143fb21" xsi:type="BusinessObject">
+      <name xml:lang="en">Cargo Empresa</name>
+    </element>
+    <element identifier="id-53aed1791a8c4b7290b51a99e2f544c2" xsi:type="BusinessObject">
+      <name xml:lang="en">Comprobantes</name>
+    </element>
+    <element identifier="id-bdec1f64bf51446ca6d32caa7fbef283" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Configuración Nómina</name>
+    </element>
+    <element identifier="id-65cd8003dadf4a1fa3ee01353decbd86" xsi:type="BusinessObject">
+      <name xml:lang="en">Dependencia</name>
+    </element>
+    <element identifier="id-54c7a3879acc4497969594bdd05907c5" xsi:type="BusinessObject">
+      <name xml:lang="en">Necesidades del dominio SI</name>
+    </element>
+    <element identifier="id-e1c19573b21e4cfbae345dcfeb7aef2a" xsi:type="BusinessObject">
+      <name xml:lang="en">Encargo</name>
+    </element>
+    <element identifier="id-7f66a26a64314981b37e4da827c6b588" xsi:type="BusinessObject">
+      <name xml:lang="en">Novedades Ocasionales</name>
+    </element>
+    <element identifier="id-afb2624313114dc3a96a41675862894c" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Migración RR. Físicos</name>
+    </element>
+    <element identifier="id-7bcfa3a60c5443cf8a49eb26bcc20dea" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Contrucción</name>
+    </element>
+    <element identifier="id-0dbf7bb17b7146f89dfd0b60bc286944" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Diseño</name>
+    </element>
+    <element identifier="id-98aaf406d3b14a36830296add705edaa" xsi:type="BusinessObject">
+      <name xml:lang="en">Centros de Costo</name>
+    </element>
+    <element identifier="id-91270e2ca8984a71ba5e465c2c8556a5" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Configuración RR. Físicos</name>
+    </element>
+    <element identifier="id-9a804c06939045dda59fcf33b4828076" xsi:type="BusinessObject">
+      <name xml:lang="en">Cuentas Contables</name>
+    </element>
+    <element identifier="id-fb522aabff4e404291b954e6ceb4aa9b" xsi:type="BusinessObject">
+      <name xml:lang="en">Fondos</name>
+    </element>
+    <element identifier="id-65ac8a4c65ad4d5e9c1b693376e1a62b" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Verificación</name>
+    </element>
+    <element identifier="id-848f9cbed36a4b7ba52273d480faab97" xsi:type="BusinessObject">
+      <name xml:lang="en">Referencias</name>
+    </element>
+    <element identifier="id-b3bb1a819e314749b710972a88e9bdf3" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Análisis</name>
+    </element>
+    <element identifier="id-c430e27b2d744cd0b2c74c2dc25fd6e0" xsi:type="BusinessObject">
+      <name xml:lang="en">Vacaciones</name>
+    </element>
+    <element identifier="id-5b44f7df63474c0fbe139233092bda4a" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Planeación ERP</name>
+    </element>
+    <element identifier="id-7fa80e12d55342b3be42581cfbff2446" xsi:type="BusinessObject">
+      <name xml:lang="en">Cargo Ocurrencia</name>
+    </element>
+    <element identifier="id-e6853090fd91476da8fd5261aa71716a" xsi:type="BusinessObject">
+      <name xml:lang="en">Nómina</name>
+    </element>
+    <element identifier="id-64679c301f3145689e1c5d76486223c6" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Verificación Nómina</name>
+    </element>
+    <element identifier="id-4ef26fd2a4fc4cb5bf4bca71b3704f04" xsi:type="BusinessObject">
+      <name xml:lang="en">Diagnóstico de Debilidades Tecnológicas</name>
+    </element>
+    <element identifier="id-6a6a057a72964df694b7b5a58290b02e" xsi:type="BusinessProcess">
+      <name xml:lang="en">ING.Migración Nómina</name>
+    </element>
+    <element identifier="id-c6a562723b8f47eb882b9797bbec8231" xsi:type="BusinessObject">
+      <name xml:lang="en">Parámetros</name>
+    </element>
+    <element identifier="id-99523bf9f03f4a5287770f8f320408b8" xsi:type="BusinessObject">
+      <name xml:lang="en">Novedades Periódicas</name>
+    </element>
+    <element identifier="id-092de09a90c4462399934bac419c7ece" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Salidas de almacén</name>
+    </element>
+    <element identifier="id-c1652b7fbd1f4089bf0f3e74b9c67a3f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Entrada devolutivos</name>
+    </element>
+    <element identifier="id-f6910d46b04e4c2da18f2534c2c071f7" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Comprobantes de Contabilidad</name>
+    </element>
+    <element identifier="id-1b58815188be40d392692838cc38da21" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Bitácora Arquitectura</name>
+    </element>
+    <element identifier="id-f10d181e17754129a4c8da861787e312" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Documentación Técnica</name>
+    </element>
+    <element identifier="id-ed3fe903f0af43c78854af72a6e867c6" xsi:type="ApplicationComponent">
+      <name xml:lang="en">sys: Financiero PCT</name>
+    </element>
+    <element identifier="id-42d9ab905ec04a5d87454285bfbde747" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Salida de devolutivo</name>
+    </element>
+    <element identifier="id-cf1aad7895be460da7803aa7e952cf87" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Solución</name>
+    </element>
+    <element identifier="id-4f2dfe5a241a4b93b8e5f963ff149ae6" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Comprobante de almacen</name>
+    </element>
+    <element identifier="id-2929d65203cb498a82e9adf92b03a543" xsi:type="ApplicationComponent">
+      <name xml:lang="en">BOGDATA</name>
+    </element>
+    <element identifier="id-4efb10abdb5744a19edc64bb76559a61" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Presupuesto de Ingreso</name>
+    </element>
+    <element identifier="id-b46f52b838d34f4eb18ee3d390ab6a40" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Repositorio Análisis</name>
+    </element>
+    <element identifier="id-7834a02c63684955b6d1a3aeb2cb4295" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestor de Requerimientos de arquitectura</name>
+    </element>
+    <element identifier="id-d928e88dddf446f980d9201381ec0f55" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Integración presupuestal de gastos con BOGDATA</name>
+    </element>
+    <element identifier="id-fa5721ae08fb45a5bcedd19424787f79" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Repositorio Modelos / SOA</name>
+    </element>
+    <element identifier="id-cd4af05d7f5649b6b1f1eb01376b9465" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestor de Riesgos Arquitectura</name>
+    </element>
+    <element identifier="id-ca8f4428612349178e9598c8ca1386d7" xsi:type="ApplicationComponent">
+      <name xml:lang="en">sys: Recursos Físicos</name>
+    </element>
+    <element identifier="id-57c035639cc84217aa850fa368db2826" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Salida de consumo</name>
+    </element>
+    <element identifier="id-222a0f5a07b1453782a274047b06b6c5" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Informes de Contabilidad</name>
+    </element>
+    <element identifier="id-5f8d0592e3d04a099690fecf39fafbaf" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Catálogo Bloques Construcción</name>
+    </element>
+    <element identifier="id-aaa5445a7bc04c3283e70d8b03ac04a5" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Entrada de consumo</name>
+    </element>
+    <element identifier="id-02b7346ee7974e5c8124db6e9914a613" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Informes de almacén</name>
+    </element>
+    <element identifier="id-74ae6a8d237848379888fc4282683a10" xsi:type="ApplicationComponent">
+      <name xml:lang="en">sys: Nómina Humano</name>
+    </element>
+    <element identifier="id-e2d2a6545a964ec0b542c91bece6524c" xsi:type="ApplicationComponent">
+      <name xml:lang="en">ControlDoc &lt;&lt;SGDEA&gt;&gt;</name>
+    </element>
+    <element identifier="id-e4f5dd63db6f4f8f9f74a51f4dea9820" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Modelo Arquitectura</name>
+    </element>
+    <element identifier="id-2bf3a54ad94d4513861dab45e4fa5c82" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Estructura Organizacional</name>
+    </element>
+    <element identifier="id-40ca06f3820b4be6baff82758ccdd855" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Salud y Seguridad: Manejo Ausentismos - Recobro Incapacidades</name>
+    </element>
+    <element identifier="id-d0db35b368094eb4be2a6775ffe48669" xsi:type="ApplicationComponent">
+      <name xml:lang="en">HUMANO® En Línea – Portal de Autogestión</name>
+    </element>
+    <element identifier="id-9f073754d50342d5aaa479e39598a255" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Trámites en Línea (Exclusivo Cloud)</name>
+    </element>
+    <element identifier="id-ab2b7ebec0124aa9ab278ce661ad2ac9" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Administración HUMANO</name>
+    </element>
+    <element identifier="id-7deb439ed2624c16bc0527b844c4ffff" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Planta y Personal</name>
+    </element>
+    <element identifier="id-4837c5db7c314c9c8ebc331bcc8eb1f9" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Compensación y Laborales</name>
+    </element>
+    <element identifier="id-3b71a50514e1426ab989f8c317d2cddd" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Obligaciones e Integrador de Pagos - Autorización de Pagos</name>
+    </element>
+    <element identifier="id-f762cc310e254044952d3d6395bc45bb" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Estadísticas de consumo y compras</name>
+    </element>
+    <element identifier="id-587e791d928c47e696be9c3ea18d9064" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Reclasificación de cuentas</name>
+    </element>
+    <element identifier="id-ee3d6c3427bb4a0a9373552ab42e7cff" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Estudio de Solicitudes</name>
+    </element>
+    <element identifier="id-f2a647f2d3fd4663bd6d6854bb912c17" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Integración contable de movimientos</name>
+    </element>
+    <element identifier="id-3533c64daa4c42c588af552f7088dd52" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Seguimiento de solicitudes</name>
+    </element>
+    <element identifier="id-5c7df96290a546b9bbc8c23ce18b283f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Seguimiento a Metas</name>
+    </element>
+    <element identifier="id-173d4f4742e3476c813938735eb10457" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Generación de información exógena - DIAN</name>
+    </element>
+    <element identifier="id-2b37f840537b4209943205a5b433f672" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Disponibilidades Presupuestales</name>
+    </element>
+    <element identifier="id-9eb480e2974843a6bf5dd6b4cd04ff57" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Solicitudes</name>
+    </element>
+    <element identifier="id-a20a6c292f064e61bd968684dd99b54c" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Radicación de Cuentas de Cobro</name>
+    </element>
+    <element identifier="id-dae4defd4aa7444c923313d4a2b04140" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Parametrización contable integral</name>
+    </element>
+    <element identifier="id-04c93c24b4944cae94278565e82804fb" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Integración de bajas de inventario</name>
+    </element>
+    <element identifier="id-026f1385c2db477c8d6e72773758f999" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Automatización de recaudos</name>
+    </element>
+    <element identifier="id-3796f39d89e843dca03c6c8d26df2000" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Control de compromisos adquiridos</name>
+    </element>
+    <element identifier="id-30af049c40434e109997233f66b515d1" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Generación de órdenes de suministro</name>
+    </element>
+    <element identifier="id-43e008d017824efc844cd584dcfbbf7c" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Solicitud de elementos</name>
+    </element>
+    <element identifier="id-eb9ced3d56184fb58606f8413cf5c430" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Compromisos Presupuestales</name>
+    </element>
+    <element identifier="id-435ff978a69341c98f04a2a81778e936" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Administrador de Terceros</name>
+    </element>
+    <element identifier="id-537a661021204a798c539bbba962aef5" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Integración</name>
+    </element>
+    <element identifier="id-85e1ec0bc16e41fe81eba1e89524a2b0" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Manejo de Elementos Devolutivos</name>
+    </element>
+    <element identifier="id-b815f587b8fe480cbe858ce98e9a8a0c" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestión de pagos externos</name>
+    </element>
+    <element identifier="id-2a65b80dd7264f20886493181e7aa1e2" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Legalización de Avances</name>
+    </element>
+    <element identifier="id-3179d0dca8754c9bb37d7d33e526e109" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Generación de diarios de almacén</name>
+    </element>
+    <element identifier="id-fab9e669233146629f46014a40a7b322" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Entradas de almacén</name>
+    </element>
+    <element identifier="id-1db20bc967074cd3a1e04810157aa875" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Almacen</name>
+    </element>
+    <element identifier="id-3c924c5e4ffc4acaacd2069b8cd2a6e3" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Cierre de vigencia</name>
+    </element>
+    <element identifier="id-a48830465f7f44c9988eabd897dcce3e" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Reposición de inventario</name>
+    </element>
+    <element identifier="id-c1648b7c2fec4202b63f00fc89d08917" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Obligaciones:Gestión de reservas presupuestales</name>
+    </element>
+    <element identifier="id-ba3b72d2324a49678c5004068588c6a3" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Apropiaciones, Ejecución Presupuestal de Gastos y PAC</name>
+    </element>
+    <element identifier="id-d44fa3433180446badd21fc005ea7a0f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Programación de procesos contables de amortización</name>
+    </element>
+    <element identifier="id-bacfc67822aa46c1b55cfa133987170f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestión de tipos de órdenes de pago y anticipos</name>
+    </element>
+    <element identifier="id-e274178e47634351977a4684e03cdfa3" xsi:type="ApplicationComponent">
+      <name xml:lang="en">&lt;&lt;cmp&gt;&gt; Ejecución Presupuestal del Ingreso y Gastos</name>
+    </element>
+    <element identifier="id-b343fd73a94a4169bdac3d417d112b25" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestión Anual de Caja (PAC)</name>
+    </element>
+    <element identifier="id-8ef927a4c00b405e94edee9ed586d36e" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Generación de libros contables</name>
+    </element>
+    <element identifier="id-c279aaaacf9d4fd5b14e15159399d40f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Carga de saldos iniciales</name>
+    </element>
+    <element identifier="id-f4a2e0d48c1944aa91ea956e297bd46c" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Proceso de Autorización de Pagos</name>
+    </element>
+    <element identifier="id-3316a65d7c924ff58d623436230b2a2a" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Liquidación automática de descuentos</name>
+    </element>
+    <element identifier="id-072b3cdfc95a41ad8d24365c375c0a8f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Clasificación de artículos</name>
+    </element>
+    <element identifier="id-0376138457a24a9998e7d1db513f27d6" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Ordenes de Suministro</name>
+    </element>
+    <element identifier="id-13d9a77eeac04dbbbb4dbe645cec68f0" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Integración presupuestal de ingresos con BOGDATA</name>
+    </element>
+    <element identifier="id-8b81489d41c54b43960de152815b6ef4" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Deterioro de activos</name>
+    </element>
+    <element identifier="id-364fef81060e4e62b5b165ab67937f42" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Plan de Cuentas</name>
+    </element>
+    <element identifier="id-c7af162bb6a64794b97d0b077ba72a11" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Ordenes:Gestión de descuentos y recargos</name>
+    </element>
+    <element identifier="id-d1756c9c9da5401a85bc8263462171bc" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestión de bienes de consumo y devolutivos</name>
+    </element>
+    <element identifier="id-08907dbe828844b7bc72e9bec94a73e7" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Configuración de centros de solicitud</name>
+    </element>
+    <element identifier="id-7aa95266ae704782927b3f83e0a83a5b" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Registro manual de comprobantes diarios</name>
+    </element>
+    <element identifier="id-8d6bc650e5404a6ba37f0aabe9b3d86a" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Contabilidad</name>
+    </element>
+    <element identifier="id-3194206fbe7a45c9936a00af130d30b9" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Avalúo de activos devolutivos</name>
+    </element>
+    <element identifier="id-a6f6bbc2ecb146539139f640bac7553f" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Administración documental contractual</name>
+    </element>
+    <element identifier="id-e493753a23114a1da8d00292fdce66bb" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestión contable de bajas</name>
+    </element>
+    <element identifier="id-1ed3baebca8d4fd19174ea6348bf7858" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Historial de precios</name>
+    </element>
+    <element identifier="id-ebd538151d0e48e88e8670e85dda5b94" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Gestión de descuentos y recargos</name>
+    </element>
+    <element identifier="id-7b67a2c2a2764acc8aaec6cd1752f7b1" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Consultas</name>
+    </element>
+    <element identifier="id-4b5e57978ad743ae87a231ce02e7b4eb" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Integración para Pagos</name>
+    </element>
+    <element identifier="id-d54e5957d0c0415da1d7b0bccf0ce2d8" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Reportes de anticipos y avances</name>
+    </element>
+    <element identifier="id-04bfe001aa4340a1a0738312ab944769" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Impresión de comprobantes</name>
+    </element>
+    <element identifier="id-76790ad2dd714d908a50310e7a7dd7c4" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Consulta de trazabilidad de activos</name>
+    </element>
+    <element identifier="id-4e3f1c4cfbf249d1ba8faea2bf4e7d32" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Control documental de cuentas</name>
+    </element>
+    <element identifier="id-a628fdcb9d4843999a2dca7e37eeb011" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Orden de Pago</name>
+    </element>
+    <element identifier="id-0829a9a5a6844e57a1f6db93b10547ba" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Generación de estados financieros</name>
+    </element>
+    <element identifier="id-6b65894cbeba401b87d8659a4c8f75d9" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Informes a la DIAN</name>
+    </element>
+    <element identifier="id-ec1032e3d750407382ff40ce7733dca8" xsi:type="Constraint">
+      <name xml:lang="en">R01. Riesgo de agilidad limitada</name>
+    </element>
+    <element identifier="id-ff41a7a9aad5459e8b9b3b7949c35ce7" xsi:type="Constraint">
+      <name xml:lang="en">R02. Riesgo de baja orquestación SOA</name>
+    </element>
+    <element identifier="id-92787b0aba6e407c80bb65e8a68905b6" xsi:type="Constraint">
+      <name xml:lang="en">R04. Riesgo de crecimiento de adaptadores particulares --opuesto al estándar</name>
+    </element>
+    <element identifier="id-fd0ab12fe72d46ed9fde42aa286f32a6" xsi:type="Constraint">
+      <name xml:lang="en">R05. Riesgo de baja reutilización de servicios SOA</name>
+    </element>
+    <element identifier="id-f2eb2628312543029e9a21febf9bc525" xsi:type="Constraint">
+      <name xml:lang="en">R03. Riesgo de crecimiento de dependencias entre servicios SOA</name>
+    </element>
+    <element identifier="id-aee6467c7ca247abbeebaad964936668" xsi:type="Constraint">
+      <name xml:lang="en">R06. Riesgo de permanencia de silos (islas) de servicios SOA y aplicaciones</name>
+    </element>
+    <element identifier="id-f5435324fb0148caa2331cda3ceb5755" xsi:type="Constraint">
+      <name xml:lang="en">R07. Riesgo de falta de trazabilidad para la evolución e implementación de los servicios SOA</name>
+    </element>
+    <element identifier="id-81722c2c900848d19ae71ec17fcd68f6" xsi:type="Assessment">
+      <name xml:lang="en">Riesgo Principal: silos de desarrollo</name>
+      <documentation xml:lang="en">Gestionar las líneas de sistemas (Nómina y Financiero) de manera aislada (silos de desarrollo) conduciría a inconsistencias en los datos institucionales, interfaces punto a punto, tentativa de duplicación de esfuerzos de desarrollo y desfases en los tiempos de salida a producción.</documentation>
+    </element>
+    <element identifier="id-58b9d8ef23b24e9986c22746aeaf1b26" xsi:type="Assessment">
+      <name xml:lang="en">ALS01. Complejidad</name>
+    </element>
+    <element identifier="id-b9bd694b9cd245f4b35f8a469560a1e6" xsi:type="Assessment">
+      <name xml:lang="en">ALS02. Impacto</name>
+    </element>
+    <element identifier="id-08c2c39782254c81b51f28736ce1993f" xsi:type="Assessment">
+      <name xml:lang="en">ALS03. Inversión Costo / Beneficio</name>
+    </element>
+    <element identifier="id-49b3ad951ef6440790ef706827348c0d" xsi:type="Assessment">
+      <name xml:lang="en">ALS04. Específicos*</name>
+    </element>
+    <element identifier="id-b9f044481a96424b8b77d2d25bc5d0e1" xsi:type="Assessment">
+      <name xml:lang="en">ALS05. Riesgo Técnico*</name>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-r1" source="id-81722c2c900848d19ae71ec17fcd68f6" target="id-ed3fe903f0af43c78854af72a6e867c6" xsi:type="Association" />
+    <relationship identifier="id-r2" source="id-81722c2c900848d19ae71ec17fcd68f6" target="id-ca8f4428612349178e9598c8ca1386d7" xsi:type="Association" />
+    <relationship identifier="id-r3" source="id-81722c2c900848d19ae71ec17fcd68f6" target="id-74ae6a8d237848379888fc4282683a10" xsi:type="Association" />
+    <relationship identifier="id-r4" source="id-cd4af05d7f5649b6b1f1eb01376b9465" target="id-ec1032e3d750407382ff40ce7733dca8" xsi:type="Realization" />
+    <relationship identifier="id-r5" source="id-cd4af05d7f5649b6b1f1eb01376b9465" target="id-ff41a7a9aad5459e8b9b3b7949c35ce7" xsi:type="Realization" />
+    <relationship identifier="id-r6" source="id-cd4af05d7f5649b6b1f1eb01376b9465" target="id-f2eb2628312543029e9a21febf9bc525" xsi:type="Realization" />
+    <relationship identifier="id-r7" source="id-cd4af05d7f5649b6b1f1eb01376b9465" target="id-92787b0aba6e407c80bb65e8a68905b6" xsi:type="Realization" />
+    <relationship identifier="id-r8" source="id-cd4af05d7f5649b6b1f1eb01376b9465" target="id-fd0ab12fe72d46ed9fde42aa286f32a6" xsi:type="Realization" />
+    <relationship identifier="id-r9" source="id-cd4af05d7f5649b6b1f1eb01376b9465" target="id-aee6467c7ca247abbeebaad964936668" xsi:type="Realization" />
+    <relationship identifier="id-r10" source="id-cd4af05d7f5649b6b1f1eb01376b9465" target="id-f5435324fb0148caa2331cda3ceb5755" xsi:type="Realization" />
+    <relationship identifier="id-r11" source="id-3b71a50514e1426ab989f8c317d2cddd" target="id-f6910d46b04e4c2da18f2534c2c071f7" xsi:type="Flow"><name>Causación</name></relationship>
+    <relationship identifier="id-r12" source="id-3b71a50514e1426ab989f8c317d2cddd" target="id-2929d65203cb498a82e9adf92b03a543" xsi:type="Flow"><name>Gestión de pagos</name></relationship>
+    <relationship identifier="id-r13" source="id-2929d65203cb498a82e9adf92b03a543" target="id-4b5e57978ad743ae87a231ce02e7b4eb" xsi:type="Flow"><name>Órdenes pagadas</name></relationship>
+    <relationship identifier="id-r14" source="id-fab9e669233146629f46014a40a7b322" target="id-3b71a50514e1426ab989f8c317d2cddd" xsi:type="Flow"><name>Entrada de almacén</name></relationship>
+    <relationship identifier="id-r15" source="id-e2d2a6545a964ec0b542c91bece6524c" target="id-4e3f1c4cfbf249d1ba8faea2bf4e7d32" xsi:type="Flow"><name>Validación soporte</name></relationship>
+    <relationship identifier="id-r16" source="id-8d6bc650e5404a6ba37f0aabe9b3d86a" target="id-1db20bc967074cd3a1e04810157aa875" xsi:type="Flow"><name>Integración contable</name></relationship>
+    <relationship identifier="id-r17" source="id-ca8f4428612349178e9598c8ca1386d7" target="id-1db20bc967074cd3a1e04810157aa875" xsi:type="Composition" />
+    <relationship identifier="id-r18" source="id-ed3fe903f0af43c78854af72a6e867c6" target="id-8d6bc650e5404a6ba37f0aabe9b3d86a" xsi:type="Composition" />
+    <relationship identifier="id-r19" source="id-74ae6a8d237848379888fc4282683a10" target="id-4837c5db7c314c9c8ebc331bcc8eb1f9" xsi:type="Composition" />
+    <relationship identifier="id-r20" source="id-74ae6a8d237848379888fc4282683a10" target="id-7deb439ed2624c16bc0527b844c4ffff" xsi:type="Composition" />
+    <relationship identifier="id-r21" source="id-74ae6a8d237848379888fc4282683a10" target="id-9f073754d50342d5aaa479e39598a255" xsi:type="Composition" />
+    <relationship identifier="id-r22" source="id-74ae6a8d237848379888fc4282683a10" target="id-d0db35b368094eb4be2a6775ffe48669" xsi:type="Composition" />
+    <relationship identifier="id-r23" source="id-e4f5dd63db6f4f8f9f74a51f4dea9820" target="id-58b9d8ef23b24e9986c22746aeaf1b26" xsi:type="Influence" />
+    <relationship identifier="id-r24" source="id-e4f5dd63db6f4f8f9f74a51f4dea9820" target="id-b9bd694b9cd245f4b35f8a469560a1e6" xsi:type="Influence" />
+    <relationship identifier="id-r25" source="id-e4f5dd63db6f4f8f9f74a51f4dea9820" target="id-08c2c39782254c81b51f28736ce1993f" xsi:type="Influence" />
+    <relationship identifier="id-r26" source="id-dad7a2c0a70147a78337c4775383514d" target="id-c47eabe09b074d3f8f7294d393e22f27" xsi:type="Realization" />
+    <relationship identifier="id-r27" source="id-91270e2ca8984a71ba5e465c2c8556a5" target="id-e7ec7335a26340559f0b9591a0139211" xsi:type="Realization" />
+    <relationship identifier="id-r28" source="id-bdec1f64bf51446ca6d32caa7fbef283" target="id-7bba42429a2e407ab4148efc58d95145" xsi:type="Realization" />
+  </relationships>
+</model>
